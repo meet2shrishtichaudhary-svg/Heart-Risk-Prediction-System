@@ -1,0 +1,61 @@
+{
+    "selected_model": "Logistic Regression",
+    "selection_rationale": "Selected 'Logistic Regression' based on the clinical validation criterion: Mean CV Recall = 0.7834 (minimizing critical false negatives), Mean CV ROC-AUC = 0.9089, and Mean CV F1-Score = 0.8214. Accuracy (0.8429) was monitored but not prioritized alone.",
+    "random_state": 42,
+    "cv_folds": 5,
+    "train_samples": 242,
+    "test_samples": 61,
+    "cv_results": {
+        "Logistic Regression": {
+            "cv_accuracy_mean": 0.8428571428571429,
+            "cv_accuracy_std": 0.021823445741339154,
+            "cv_precision_mean": 0.8706864988558353,
+            "cv_precision_std": 0.074128470127318,
+            "cv_recall_mean": 0.783399209486166,
+            "cv_recall_std": 0.03580512837199452,
+            "cv_f1_mean": 0.821396864377274,
+            "cv_f1_std": 0.014910327727348245,
+            "cv_roc_auc_mean": 0.9089422654640045,
+            "cv_roc_auc_std": 0.018681396260935196
+        },
+        "Decision Tree": {
+            "cv_accuracy_mean": 0.7606292517006803,
+            "cv_accuracy_std": 0.031148459448013508,
+            "cv_precision_mean": 0.754720133667502,
+            "cv_precision_std": 0.05341322614296857,
+            "cv_recall_mean": 0.7197628458498023,
+            "cv_recall_std": 0.08997110185424473,
+            "cv_f1_mean": 0.7318828103882062,
+            "cv_f1_std": 0.044228533105180226,
+            "cv_roc_auc_mean": 0.8236577030055292,
+            "cv_roc_auc_std": 0.03591655532489805
+        },
+        "Random Forest": {
+            "cv_accuracy_mean": 0.8097789115646259,
+            "cv_accuracy_std": 0.025175812913056414,
+            "cv_precision_mean": 0.8140595210416182,
+            "cv_precision_std": 0.051813301736196325,
+            "cv_recall_mean": 0.7652173913043476,
+            "cv_recall_std": 0.0465397186704665,
+            "cv_f1_mean": 0.7866248727118291,
+            "cv_f1_std": 0.02661810645232719,
+            "cv_roc_auc_mean": 0.8959567807393893,
+            "cv_roc_auc_std": 0.02295044201654234
+        }
+    },
+    "feature_names": [
+        "age",
+        "trestbps",
+        "chol",
+        "thalach",
+        "oldpeak",
+        "cp",
+        "restecg",
+        "slope",
+        "thal",
+        "sex",
+        "fbs",
+        "exang",
+        "ca"
+    ]
+}

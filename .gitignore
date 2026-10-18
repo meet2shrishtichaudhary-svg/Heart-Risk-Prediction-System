@@ -1,0 +1,34 @@
+.venv/
+venv/
+env/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.env
+.env.*
+!.env.example
+
+.ipynb_checkpoints/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.DS_Store
+Thumbs.db
+.vscode/
+
+*.log
+
+# Model artifacts
+*.pkl
+*.pickle
+*.joblib
+
+# Generated outputs
+*.tmp
+*.bak

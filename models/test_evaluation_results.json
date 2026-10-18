@@ -1,0 +1,277 @@
+{
+    "selected_model": "Logistic Regression",
+    "selection_rationale": "Selected 'Logistic Regression' based on the clinical validation criterion: Mean CV Recall = 0.7834 (minimizing critical false negatives), Mean CV ROC-AUC = 0.9089, and Mean CV F1-Score = 0.8214. Accuracy (0.8429) was monitored but not prioritized alone.",
+    "test_sample_size": 61,
+    "test_results_by_model": {
+        "Logistic Regression": {
+            "accuracy": 0.8524590163934426,
+            "precision": 0.8064516129032258,
+            "recall": 0.8928571428571429,
+            "f1": 0.847457627118644,
+            "roc_auc": 0.9567099567099567,
+            "confusion_matrix": [
+                [
+                    27,
+                    6
+                ],
+                [
+                    3,
+                    25
+                ]
+            ],
+            "true_negatives": 27,
+            "false_positives": 6,
+            "false_negatives": 3,
+            "true_positives": 25,
+            "test_sample_size": 61,
+            "roc_curve": {
+                "fpr": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.030303030303030304,
+                    0.030303030303030304,
+                    0.18181818181818182,
+                    0.18181818181818182,
+                    0.30303030303030304,
+                    0.30303030303030304,
+                    1.0
+                ],
+                "tpr": [
+                    0.0,
+                    0.03571428571428571,
+                    0.25,
+                    0.25,
+                    0.8928571428571429,
+                    0.8928571428571429,
+                    0.9642857142857143,
+                    0.9642857142857143,
+                    1.0,
+                    1.0
+                ],
+                "thresholds": [
+                    Infinity,
+                    0.9977084200643226,
+                    0.9755061469930794,
+                    0.9682604418528966,
+                    0.7322989465890961,
+                    0.5114608019899023,
+                    0.4399410532695381,
+                    0.3221467102608351,
+                    0.26757934326809646,
+                    0.017970836655001182
+                ]
+            }
+        },
+        "Decision Tree": {
+            "accuracy": 0.7868852459016393,
+            "precision": 0.8260869565217391,
+            "recall": 0.6785714285714286,
+            "f1": 0.7450980392156863,
+            "roc_auc": 0.8495670995670996,
+            "confusion_matrix": [
+                [
+                    29,
+                    4
+                ],
+                [
+                    9,
+                    19
+                ]
+            ],
+            "true_negatives": 29,
+            "false_positives": 4,
+            "false_negatives": 9,
+            "true_positives": 19,
+            "test_sample_size": 61,
+            "roc_curve": {
+                "fpr": [
+                    0.0,
+                    0.06060606060606061,
+                    0.12121212121212122,
+                    0.12121212121212122,
+                    0.21212121212121213,
+                    0.21212121212121213,
+                    0.2727272727272727,
+                    0.2727272727272727,
+                    0.30303030303030304,
+                    0.5757575757575758,
+                    1.0
+                ],
+                "tpr": [
+                    0.0,
+                    0.5,
+                    0.5714285714285714,
+                    0.6785714285714286,
+                    0.7142857142857143,
+                    0.75,
+                    0.8214285714285714,
+                    0.8571428571428571,
+                    0.8571428571428571,
+                    0.9642857142857143,
+                    1.0
+                ],
+                "thresholds": [
+                    Infinity,
+                    1.0,
+                    0.8888888888888888,
+                    0.8571428571428571,
+                    0.5,
+                    0.4166666666666667,
+                    0.4,
+                    0.375,
+                    0.3333333333333333,
+                    0.15384615384615385,
+                    0.0
+                ]
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.9016393442622951,
+            "precision": 0.8666666666666667,
+            "recall": 0.9285714285714286,
+            "f1": 0.896551724137931,
+            "roc_auc": 0.9664502164502164,
+            "confusion_matrix": [
+                [
+                    29,
+                    4
+                ],
+                [
+                    2,
+                    26
+                ]
+            ],
+            "true_negatives": 29,
+            "false_positives": 4,
+            "false_negatives": 2,
+            "true_positives": 26,
+            "test_sample_size": 61,
+            "roc_curve": {
+                "fpr": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.030303030303030304,
+                    0.030303030303030304,
+                    0.06060606060606061,
+                    0.06060606060606061,
+                    0.15151515151515152,
+                    0.15151515151515152,
+                    0.30303030303030304,
+                    0.30303030303030304,
+                    1.0
+                ],
+                "tpr": [
+                    0.0,
+                    0.03571428571428571,
+                    0.4642857142857143,
+                    0.4642857142857143,
+                    0.8214285714285714,
+                    0.8214285714285714,
+                    0.9285714285714286,
+                    0.9285714285714286,
+                    0.9642857142857143,
+                    0.9642857142857143,
+                    1.0,
+                    1.0
+                ],
+                "thresholds": [
+                    Infinity,
+                    0.9881738507831218,
+                    0.8426103747751711,
+                    0.81761474294035,
+                    0.6372343145699686,
+                    0.6071283099729952,
+                    0.5553306607331672,
+                    0.4927070674201361,
+                    0.4401971859877005,
+                    0.3222719560503141,
+                    0.31485835942664653,
+                    0.04761414484866075
+                ]
+            }
+        }
+    },
+    "cv_results_by_model": {
+        "Logistic Regression": {
+            "cv_accuracy_mean": 0.8428571428571429,
+            "cv_accuracy_std": 0.021823445741339154,
+            "cv_precision_mean": 0.8706864988558353,
+            "cv_precision_std": 0.074128470127318,
+            "cv_recall_mean": 0.783399209486166,
+            "cv_recall_std": 0.03580512837199452,
+            "cv_f1_mean": 0.821396864377274,
+            "cv_f1_std": 0.014910327727348245,
+            "cv_roc_auc_mean": 0.9089422654640045,
+            "cv_roc_auc_std": 0.018681396260935196
+        },
+        "Decision Tree": {
+            "cv_accuracy_mean": 0.7606292517006803,
+            "cv_accuracy_std": 0.031148459448013508,
+            "cv_precision_mean": 0.754720133667502,
+            "cv_precision_std": 0.05341322614296857,
+            "cv_recall_mean": 0.7197628458498023,
+            "cv_recall_std": 0.08997110185424473,
+            "cv_f1_mean": 0.7318828103882062,
+            "cv_f1_std": 0.044228533105180226,
+            "cv_roc_auc_mean": 0.8236577030055292,
+            "cv_roc_auc_std": 0.03591655532489805
+        },
+        "Random Forest": {
+            "cv_accuracy_mean": 0.8097789115646259,
+            "cv_accuracy_std": 0.025175812913056414,
+            "cv_precision_mean": 0.8140595210416182,
+            "cv_precision_std": 0.051813301736196325,
+            "cv_recall_mean": 0.7652173913043476,
+            "cv_recall_std": 0.0465397186704665,
+            "cv_f1_mean": 0.7866248727118291,
+            "cv_f1_std": 0.02661810645232719,
+            "cv_roc_auc_mean": 0.8959567807393893,
+            "cv_roc_auc_std": 0.02295044201654234
+        }
+    },
+    "random_forest_mdi_importance": {
+        "age": 0.06589887836134321,
+        "trestbps": 0.05123529724462107,
+        "chol": 0.05474795723587993,
+        "thalach": 0.10158431090566228,
+        "oldpeak": 0.09958865020849489,
+        "cp_2.0": 0.008464174020875117,
+        "cp_3.0": 0.016754278685479327,
+        "cp_4.0": 0.14675240208908377,
+        "restecg_1.0": 0.0,
+        "restecg_2.0": 0.01461375902250396,
+        "slope_2.0": 0.041644863611853586,
+        "slope_3.0": 0.002503106838407045,
+        "thal_6.0": 0.00498457973536022,
+        "thal_7.0": 0.14959002023368934,
+        "sex": 0.04362628377963119,
+        "fbs": 0.004188249015370272,
+        "exang": 0.05731303904847211,
+        "ca": 0.13651014996327254
+    },
+    "permutation_importance": {
+        "age": 0.002669552669552629,
+        "trestbps": 0.0020202020202019816,
+        "chol": 0.00173160173160171,
+        "thalach": 0.004473304473304466,
+        "oldpeak": 0.022150072150072142,
+        "cp": 0.04610389610389612,
+        "restecg": 0.001659451659451642,
+        "slope": 0.003030303030302998,
+        "thal": 0.0108225108225108,
+        "sex": 0.0031746031746031486,
+        "fbs": 0.0010101010101009722,
+        "exang": 0.01046176046176044,
+        "ca": 0.04148629148629147
+    },
+    "figures": {
+        "confusion_matrix": "models\\figures\\confusion_matrix_selected.png",
+        "roc_curves": "models\\figures\\roc_curve_comparison.png",
+        "rf_feature_importance": "models\\figures\\rf_feature_importance.png",
+        "permutation_importance": "models\\figures\\permutation_importance.png"
+    },
+    "interpretability_disclaimer": "Feature importance and permutation metrics measure mathematical association within this specific historical sample (N=303). They do not establish clinical causation or disease etiology.",
+    "uncertainty_discussion": "The held-out test set comprises 61 patients (28 with heart disease, 33 without). Because of this small sample size, single sample variations can shift percentage metrics by ~3.5%. The model is an educational demonstration and must never replace clinical diagnostics."
+}
